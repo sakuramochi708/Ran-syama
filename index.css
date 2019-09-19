@@ -30,3 +30,6 @@ footer{
     grid-area: d;
     padding: 1em
 }
+address{
+    text-align: right
+}
