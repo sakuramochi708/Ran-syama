@@ -2,7 +2,5 @@ p{
     font-size: 20px;
 }
 
-.top-wrapper {
-background-image: url(haikei.jpg);
-background-repeat:repeat;
-}
+<div style = "background-image : url(https://sakuramochi708.github.io/Ran-syama/haikei.jpg);background-repeat :repeat">
+</div>
