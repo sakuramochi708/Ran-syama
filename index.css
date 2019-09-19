@@ -2,5 +2,5 @@ p{
     font-size: 20px;
 }
 
-background-image:"https://sakuramochi708.github.io/Ran-syama/haikei.jpg"(haikei.jpg);
+background-image: url(haikei.jpg);
 background-repeat:repeat;
