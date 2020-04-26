@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>
-        情報基盤センターの初期設定の説明0__スペックの確認
+        情報基盤センターの初期設定の説明5_2要素認証を設定する
     </title>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
@@ -71,30 +71,41 @@
 
     <section>
         <h2>
-          はじめに & STEP 0　スペック・バージョンの確認
+          STEP 4  2要素認証を設定する
         </h2>
         <p>
-           まずは、取り急ぎ作ったページのため、誤字・脱字などがありましたら、ごめんなさい。
-           また、デザインについては（お察し）レベルのため、この点に関するクレームはお控えください。
+          まず、先ほど設定したFirefoxで、パスワード変更画面（<a href="https://axiole.cc.uec.ac.jp//">https://axiole.cc.uec.ac.jp//</a>）にアクセスしてください。
         </p>
+        <img src="step3_1.png" alt="" height=auto width=50%/>
+        <p>
+          この画面がでてきたら、自分のUECアカウントと先ほど設定したパスワード（以下、パスワード）を入力してください。その後、「ログイン」を押してください。
+        </p>
+        <img src="step3_2.png" alt="" height=auto width=70%/>
+        <p>
+          先ほどのStepの画像の使いまわしなのは置いといて、「2段階認証の設定」をクリックします。
+        </p>
+        <p>
+          この先の画面は個人情報の塊なので例示を見せることはできませんが、自分のスタイルにあったものを1つ選択してください。
+        </p>
+        <h2>
+          「使用しない」は絶対に選択しないでください。2019年12月よりこの2要素認証は必須となっています。
+        </h2>
+        <p>
+          この後、動作確認画面に行くので、確認してください。「2段階認証の設定」ボタンの右に「成功しました」などの文字が出れば成功です。右上の「ログアウト」を選択して画面を閉じてください。（Powershellを設定した人はそのまま開きっぱなしです）
+        </p>
+        <h5>
+          例示として、自分の設定方法は、自分のGmailにパスコードを送信するスタイルです。
+        </h5>
+        <h2>
+          まだPowershellはとじないでください。
+        </h2>
+
+        <br>
         <br>
         <p>
-          それでは、「<a href="https://www.cc.uec.ac.jp/ug/ja/guidance/student.html#">情報基盤センターシステム利用開始手順 (学生/教育研究職員向け)</a>」に記載されている手順を。自分なりに詳しく説明した解説を開始します。
-        </p>
-        <br>
-        <p>
-          まずは、自分のPCのスペックを確認します。今回はWindows10を使用して解説しますので。MacOSやLinuxの方はごめんなさい。
-          「スタートボタン⇒設定⇒システム⇒バージョン情報」と進んでください。
-        </p>
-        <img src="settei.png" alt="バージョン画面" height=auto width=30%/>
-        <p>
-          このように自分のパソコンの情報を知ることができます。私のパソコンは「64bit」「Windows 10 1909」のため、これにのっとって解説します。
-          ただし、「32bit」の方は、途中の説明文をすべて「32bit」に置き換えて頂ければ大丈夫です。Windowsのバージョンが1903より前の方は、Windowsのバージョンの更新をお願いします。（「スタートボタン⇒設定⇒更新とセキュリティ⇒Windows Update」）
-        </p>
-        <br>
-        <br>
-        <p>
-          Next ->  <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_2">STEP 1  FireFoxのダウンロード</a>
+          Next ->  <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_7">STEP 5   VPN (Virtual Private Network) を設定する
+
+          </a>
         </p>
 
     </section>

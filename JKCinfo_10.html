@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        情報基盤センターの初期設定の説明9_メール設定
+    </title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body><div class="main">
+    <header>
+        <h1>
+            Lunatic電通生もっちゃんの部屋
+        </h1>
+    </header>
+
+    <aside>
+        <p>
+            <a href="https://sakuramochi708.github.io/Ran-syama/">Top</a>
+        </p>
+        <p>
+          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_1">STEP 0 & はじめに</a>
+        </p>
+        <p>
+          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_2">STEP 1</a>
+        </p>
+        <p>
+          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_3">STEP 2前半</a>
+        </p>
+        <p>
+          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_4">STEP 2後半</a>
+        </p>
+        <p>
+          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_5">STEP 3</a>
+        </p>
+        <p>
+          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_6">STEP 4</a>
+        </p>
+        <p>
+          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_7">STEP 5</a>
+        </p>
+        <p>
+          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_8">STEP 5_L2TP</a>
+        </p>
+        <p>
+          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_9">STEP 5_SSL</a>
+        </p>
+        <p>
+          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_10">STEP 6</a>
+        </p>
+        <p>
+          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_11">STEP 7 & おわりに</a>
+        </p>
+        <p>
+            <a href="https://sakuramochi708.github.io/Ran-syama/nichijyou">日常・大学生活</a>
+        </p>
+        <p>
+            <a href="https://sakuramochi708.github.io/Ran-syama/koken">こーけん</a>
+        </p>
+        <p>
+            <a href="https://sakuramochi708.github.io/Ran-syama/mani">まにけん</a>
+        </p>
+        <p>
+            <a href="https://sakuramochi708.github.io/Ran-syama/touhou-club">電々。通信</a>
+        </p>
+        <p>
+            <a href="https://sakuramochi708.github.io/Ran-syama/sns">SNS</a>
+        </p>
+    </aside>
+
+    <section>
+        <h2>
+          STEP 6  大学メールを受信できるようにする
+        </h2>
+        <p>
+          いろいろな方法がありますが、一番オーソドックスな方法で進めます。このほかの方法は各自調べてください。（最低限使えるようにする手順なので、簡略化にご協力ください）
+        </p>
+        <br>
+        <p>
+          32bit版・64bit版両方に対応したThunderbirdのダウンロードは、<a href="https://www.thunderbird.net/ja/">こちら</a>から、中央の「無料でダウンロード」を選択し、「保存」してください。
+        </p>
+        <p>
+          64bit版をインストールしたいかたは、<a href="https://forest.watch.impress.co.jp/library/software/thunderbird/">こちら</a>からでも大丈夫です。
+        </p>
+        <br>
+        <p>
+          どちらも「実行」を選択したら、セキュリティ画面がでます。「はい」をおしてください。そして、特にこだわりが無ければ、「Ok」「次へ」などをおして、インストールしましょう。
+        </p>
+        <br>
+        <img src="step6_1.png" alt="" height=auto width=70%/>
+        <p>
+          起動したら、左の「ローカルフォルダ」を選択、「アカウント」の「アカウントセットアップ」、「メール」を選択してください（初回起動の人は「メールアカウントを設定する」も選択してください。）
+        </p>
+        <img src="step6_2.png" alt="" height=auto width=70%/>
+        <p>
+          以下の情報を入力してください。
+          <ul>
+            <li>「あなたのお名前」には「本名」をいれてください（相手の受信者欄に表示されます）</li>
+            <li>「メールアドレス」には「x20xxxxx（UECアカウント）@edu.cc.uec.ac.jp」と入力してください。</li>
+            <li>「パスワード」には、UECアカウントのパスワードを入力してください。</li>
+          </ul>
+          パスワードは記憶するにチェックを入れて、「続ける」を選択してください。
+        </p>
+        <p>
+          どんなに頑張っても、接続することができません。そこで、「手動設定」をクリックします。
+        </p>
+        <img src="step6_3.png" alt="" height=auto width=70%/>
+        <p>
+          たくさん情報が出てきます。以下の通りに設定してください。
+          <ul>
+            <li>「受信サーバー」は「imap」に設定してください。</li>
+            <li>「受信サーバー・サーバーのホスト名」は「<code>imap.cc.uec.ac.jp</code>」と入力してください。</li>
+            <li>「受信サーバー・ポート番号」は、「<code>993</code>」と入力してください。</li>
+            <li>「受信サーバー・SSL」は「SSL/TLS」を選択してください。</li>
+            <li>「受信サーバー・認証方式」は「通常のパスワード認証」を選択してください。</li>
+            <li>「送信サーバー・サーバーのホスト名」は「<code>mx-delivery.uec.ac.jp</code>」と入力してください。</li>
+            <li>「送信サーバー・ポート番号」は、「<code>587</code>」と入力してください。</li>
+            <li>「送信サーバー・SSL」は「STARTTLS」もしくは「TLS」を選択してください。</li>
+            <li>「送信サーバー・認証方式」は「通常のパスワード認証」を選択してください。</li>
+            <li>「ユーザー名」はどちらも「UECアカウント」を入力してください。</li>
+          </ul>
+          再テストを押して、接続出来れば完了です。
+        </p>
+        <br>
+        <br>
+          <p>
+            他のデバイスの設定は<a href="https://www.cc.uec.ac.jp/ug/ja/mail/edu/index.html#mail-edu">こちら</a>を参考にしてください。
+          </p>
+        <br>
+        <br>
+        <p>
+          Next ->  <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_11">STEP 7   誓約書など</a>
+        </p>
+
+    </section>
+
+    <footer>
+        <address>
+            最終更新日：2020年04月27日
+        </address>
+    </footer>
+    
+</div></body>
+
+</html>
