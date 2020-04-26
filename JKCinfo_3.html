@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        情報基盤センターの初期設定の説明2_Web ブラウザに学内専用サイトを閲覧する設定をする（前編）
+    </title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body><div class="main">
+    <header>
+        <h1>
+            Lunatic電通生もっちゃんの部屋
+        </h1>
+    </header>
+
+    <aside>
+        <p>
+            <a href="https://sakuramochi708.github.io/Ran-syama/">Top</a>
+        </p>
+        <p>
+            <a href="https://sakuramochi708.github.io/Ran-syama/nichijyou">日常・大学生活</a>
+        </p>
+        <p>
+            <a href="https://sakuramochi708.github.io/Ran-syama/koken">こーけん</a>
+        </p>
+        <p>
+            <a href="https://sakuramochi708.github.io/Ran-syama/mani">まにけん</a>
+        </p>
+        <p>
+            <a href="https://sakuramochi708.github.io/Ran-syama/touhou-club">電々。通信</a>
+        </p>
+        <p>
+            <a href="https://sakuramochi708.github.io/Ran-syama/sns">SNS</a>
+        </p>
+    </aside>
+
+    <section>
+        <h2>
+          STEP 2  Web ブラウザに学内専用サイトを閲覧する設定をする（前編）
+        </h2>
+        <p>
+          「学外」からアクセスしている人向けの情報になります。「学内」アクセス中の人は飛ばしてください。
+        </p>
+        <h3>
+          ここでいう「学外」「学内」の説明をします。
+          「学内」とは「学内ネットワーク」のことで、
+          <ul>
+            <li>大学に有線接続しているPC</li>
+            <li>「UECWireless」や「AIA-Wireless」に接続しているPC</li>
+            <li>学校外から「VPN接続」しているPC</li>
+          </ul>
+          のことを指します。
+          これ以外はすべて「学外」となります。
+        </h3>
+
+        <img src="step2_1.png" alt="" height=auto width=30%/>（引用：情報基盤センターHP）
+        <p>
+          Windows 10の方は、スタートボタンの横の「検索」から「Powershell」と検索して、「Windows PowerShell」（無印）を選択してください。
+        </p>
+        <br>
+        <img src="step2_2.png" alt="" height=auto width=70%/>
+        <p>
+          次に、以下のコードをコピー＆Powershellにペーストしてください。コピーは範囲を選択して「Ctrl＋C」、ペーストは「Ctrl＋V」です。
+        </p>
+        <code>
+          ssh sol.edu.cc.uec.ac.jp -L 8080:proxy.uec.ac.jp:8080 -l x20xxxxx
+        </code>
+        <p>
+          ペーストしたあとに、「x20xxxxx」を自分のUECアカウントにしてください。そして、「Enter」を押してください。
+        </p>
+        <br>
+        <p>
+          この後に、何か文章が出てきて「yes/no」ときかれたら、「Yes」と入力して「Enter」を押してください。
+        </p>
+        <img src="step2_3.png" alt="" height=auto width=70%/>
+        <p>
+          次にパスワードを入力します。初期パスワードを入力し、終わったら「Enter」を押してください。この時に画面には何も表示されないので注意してください。
+        </p>
+        <img src="step2_4.png" alt="" height=auto width=70%/>
+        <p>
+          このような画面が出てきたら成功です。（Last Loginは出てこない人もいます）。
+        </p>
+        <h3>
+          この画面をひらいたままにしておきましょう。
+        </h3>
+
+        <br>
+        <br>
+        <p>
+          Next ->  <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_4">STEP 2  Web ブラウザに学内専用サイトを閲覧する設定をする（後編）</a>
+        </p>
+
+    </section>
+
+    <footer>
+        <address>
+            最終更新日：2020年04月26日
+        </address>
+    </footer>
+    
+</div></body>
+
+</html>
