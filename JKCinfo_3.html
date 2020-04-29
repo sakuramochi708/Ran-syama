@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>
-        情報基盤センターの初期設定の説明2_Web ブラウザに学内専用サイトを閲覧する設定をする（前編）
+        情報基盤センターの初期設定の説明2-2_PowershellでWeb ブラウザに学内専用サイトを閲覧する設定をする（前編）
     </title>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
@@ -26,10 +26,13 @@
           <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_2">STEP 1</a>
         </p>
         <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_3">STEP 2前半</a>
+          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_2_9">STEP 2</a>
         </p>
         <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_4">STEP 2後半</a>
+          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_3">STEP 2_SSH-PowerShell</a>
+        </p>
+        <p>
+          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_4">STEP 2_SSH-PuTTY</a>
         </p>
         <p>
           <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_5">STEP 3</a>
@@ -67,26 +70,19 @@
         <p>
             <a href="https://sakuramochi708.github.io/Ran-syama/sns">SNS</a>
         </p>
+        <p>
+          <a href="https://sakuramochi708.github.io/Ran-syama/link">有用UEC生のlink集</a>
+      </p>
     </aside>
 
     <section>
         <h2>
-          STEP 2  Web ブラウザに学内専用サイトを閲覧する設定をする（前編）
+          STEP 2-1  PowershellでWebブラウザに学内専用サイトを閲覧する設定をする
         </h2>
         <p>
           「学外」からアクセスしている人向けの情報になります。「学内」アクセス中の人は飛ばしてください。
         </p>
-        <h3>
-          ここでいう「学外」「学内」の説明をします。
-          「学内」とは「学内ネットワーク」のことで、
-          <ul>
-            <li>大学に有線接続しているPC</li>
-            <li>「UECWireless」や「AIA-Wireless」に接続しているPC</li>
-            <li>学校外から「VPN接続」しているPC</li>
-          </ul>
-          のことを指します。
-          これ以外はすべて「学外」となります。
-        </h3>
+        
 
         <img src="step2_1.png" alt="" height=auto width=30%/>（引用：情報基盤センターHP）
         <p>
@@ -118,18 +114,53 @@
         <h3>
           この画面をひらいたままにしておきましょう。
         </h3>
+        <br>
+        <br>
+        <p>
+          次に、Step 1でインストールした「Firefox」を立ち上げます。
+        </p>
+        <img src="step2_5.png" alt="" height=auto width=50%/>
+        <p>
+          「右上の三　⇒　オプション　⇒　一般」を選択し、一番下にある「接続設定」をクリックします。          
+        </p>
+        <img src="step2_6.png" alt="" height=auto width=70%/>
+        <p>
+          上の画像の黄色の印を手がかりに入力をお願いします。
+          <ul>
+            <li>「手動でプロキシを設定する」にチェック</li>
+            <li>HTTPプロキシ欄に「localhost」と入力</li>
+            <li>ポート欄に「8080」と入力</li>
+            <li>その下の「このプロキシーを FTP と HTTPS でも使用する(S)」にチェック</li>
+          </ul>
+          そして、下の「OK」を押してください。
+        </p>
+        <br>
+        <img src="step2_7.png" alt="" height=auto width=70%/>
+        <p>
+          そして、<a href="https://www.cc.uec.ac.jp/in/" target="_blank">https://www.cc.uec.ac.jp/in/</a>にアクセスしてください。
+        </p>
+        
+        <img src="step2_8.png" alt="" height=auto width=70%/>
+        <p>
+          上のような画面が出たら成功です。
+        </p>
+        <br>
+        <p>
+          なお、SSHを使用しない場合は、「システムのプロキシー設定を使用する」にもどしておきましょう。
+        </p>
+
 
         <br>
         <br>
         <p>
-          Next ->  <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_4">STEP 2  Web ブラウザに学内専用サイトを閲覧する設定をする（後編）</a>
+          Next ->  <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_5">STEP 3  UEC アカウントの初期パスワードを変更する</a>
         </p>
 
     </section>
 
     <footer>
         <address>
-            最終更新日：2020年04月26日
+            最終更新日：2020年04月29日
         </address>
     </footer>
     

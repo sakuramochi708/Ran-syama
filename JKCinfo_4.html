@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>
-        情報基盤センターの初期設定の説明3_Web ブラウザに学内専用サイトを閲覧する設定をする（後編）
+        情報基盤センターの初期設定の説明2-3_PuTTYでWebブラウザに学内専用サイトを閲覧する設定をする
     </title>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
@@ -26,10 +26,13 @@
           <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_2">STEP 1</a>
         </p>
         <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_3">STEP 2前半</a>
+          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_2_9">STEP 2</a>
         </p>
         <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_4">STEP 2後半</a>
+          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_3">STEP 2_SSH-PowerShell</a>
+        </p>
+        <p>
+          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_4">STEP 2_SSH-PuTTY</a>
         </p>
         <p>
           <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_5">STEP 3</a>
@@ -67,61 +70,133 @@
         <p>
             <a href="https://sakuramochi708.github.io/Ran-syama/sns">SNS</a>
         </p>
+        <p>
+          <a href="https://sakuramochi708.github.io/Ran-syama/link">有用UEC生のlink集</a>
+      </p>
     </aside>
 
     <section>
         <h2>
-          STEP 2  Web ブラウザに学内専用サイトを閲覧する設定をする（後編）
+          STEP 2-2  PuTTYでWebブラウザに学内専用サイトを閲覧する設定をする
         </h2>
         <p>
-          次に、Step 1でインストールした「Firefox」を立ち上げます。
+          まず、PuTTYのインストールを行います。<a href="https://www.putty.org/" target="_blank">https://www.putty.org/</a>にアクセスします。
+        </p>
+        <img src="PuTTY_1.png" alt="" height=auto width=70%/>
+        <p>
+          黄色〇の"here"をクリック
+        </p>
+        <img src="PuTTY_2.png" alt="" height=auto width=70%/>
+        <p>
+          自分のパソコンのバージョンに合わせて「保存」してください。（ダウンロードに時間がかかります）もし、自分のパソコンのバージョンがわからない場合、<a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_1" target="_blank">ここ</a>を確認してください。
+        </p>
+        <img src="PuTTY_3.png" alt="" height=auto width=70%/>
+        <p>
+          実行しようとすると、なにやら不穏な文字が。リンク先からインストールしてくださった方は大丈夫ですので「OK」を選択。以下、特にこだわりがない方は、どんどん進みましょう。（Installのボタンを押すと、セキュリティ画面がでますが「はい」を選択）
+        </p>
+        <img src="PuTTY_4.png" alt="" height=auto width=70%/>
+        <img src="PuTTY_5.png" alt="" height=auto width=70%/>
+        <img src="PuTTY_6.png" alt="" height=auto width=70%/>
+        <img src="PuTTY_7.png" alt="" height=auto width=70%/>
+        <p>
+          README fileはお好みで開いてください。英語に自信のある方は私に和訳をください（嘘です）。ということで、インストールは終了です。デスクトップ画面にアイコンがあります。（無い場合は、「スタートボタン」から「PuTTY」と検索してください。）
+        </p>
+        <br>
+        <br>
+        <p>
+          次にPuTTYの設定をして「学内」Webを閲覧できるようにします。毎度設定が必要です（たぶん）ので面倒くさいですが、頑張りましょう。
+        </p>
+        <img src="PuTTY_8.png" alt="" height=auto width=70%/>
+        <p>
+          起動したら、「Category」から「Session」を選択、「Host Name」のところに「<code>sol.edu.cc.uec.ac.jp</code>」を入力してください。
+        </p>
+        <img src="PuTTY_9.png" alt="" height=auto width=70%/>
+        <p>
+          次に、「Category」の欄を「Connection　-> SSH の"+" -> Tunnels」の順にクリックしてください。
+        </p>
+        <img src="PuTTY_10.png" alt="" height=auto width=70%/>
+        <p>
+          画像の番号に従ってください。
+        </p>
+        <p>
+          <ul>
+            <li>1,「Source port」に「1080」と入力</li>
+            <li>2,下にある「Dynamic」を選択</li>
+            <li>3,「Source port」の横の「Add」を選択</li>
+            <li>4,上の大きい四角に「D1080」と表示されれば成功</li>
+          </ul>
+        </p>
+        <p>
+          最後に「Open」を選択すると、別のウィンドウが開きます。
+        </p>
+        <img src="PuTTY_11.png" alt="" height=auto width=70%/>
+        <p>
+          「Login as:」の所には、自分の「UECアカウント（アルファベット＋7桁）」を入力して「Enter」をおしてください。
+        </p>
+        <p>
+          「Password」の所には「パスワード（変更していないしとは初期パスワード）」を入力してください。この時に画面には表示されません。終わったら「Enter」を押してください。
+        </p>
+        <img src="PuTTY_12.png" alt="" height=auto width=70%/>
+        <p>
+          このような画面が出れば成功です。この画面が開いている間有効なので、閉じないでください。
+        </p>
+        <br>
+        <br>
+        <p>
+          最後にブラウザの設定です。
+        </p>
+        <p>
+          Step 1でインストールした「Firefox」を立ち上げます。
         </p>
         <img src="step2_5.png" alt="" height=auto width=50%/>
         <p>
           「右上の三　⇒　オプション　⇒　一般」を選択し、一番下にある「接続設定」をクリックします。          
         </p>
-        <img src="step2_6.png" alt="" height=auto width=70%/>
+        <img src="PuTTY_13.png" alt="" height=auto width=70%/>
         <p>
           上の画像の黄色の印を手がかりに入力をお願いします。
           <ul>
             <li>「手動でプロキシを設定する」にチェック</li>
-            <li>HTTPプロキシ欄に「localhost」と入力</li>
-            <li>ポート欄に「8080」と入力</li>
-            <li>その下の「このプロキシーを FTP と HTTPS でも使用する(S)」にチェック</li>
+            <li>赤×部分は「空白」にしてください（ポートは「0」でOKです）</li>
+            <li>「SOCKS　ホスト」欄に「<code>localhost</code>」と入力</li>
+            <li>その隣のポート欄に「8080」と入力</li>
           </ul>
           そして、下の「OK」を押してください。
         </p>
         <br>
         <img src="step2_7.png" alt="" height=auto width=70%/>
         <p>
-          上の方の「＋」を押して「新しいタブ」を出してください。そして、以下のURLを入力してください。
+          そして、<a href="https://www.cc.uec.ac.jp/in/" target="_blank">https://www.cc.uec.ac.jp/in/</a>にアクセスしてください。
         </p>
-        <p>
-          <code>
-            https://www.cc.uec.ac.jp/in/
-          </code>
-        </p>
+        
         <img src="step2_8.png" alt="" height=auto width=70%/>
         <p>
           上のような画面が出たら成功です。
         </p>
         <br>
         <p>
-          なお、SSHを使用しない場合は、「システムのプロキシー設定を使用する」を選んでおきましょう。
+          なお、SSHを使用しない場合は、「システムのプロキシー設定を使用する」にもどしておきましょう。
         </p>
 
+
+
+       
+        
         <br>
         <br>
         <p>
           Next ->  <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_5">STEP 3  UEC アカウントの初期パスワードを変更する
           </a>
         </p>
+        <h5>
+          出典：<a href="https://www.cc.uec.ac.jp/ug/ja/remote/ssh/index.html#remote-ssh-tunnel-howto" target="_blank">情報基盤センターHP</a>
+        </h5>
 
     </section>
 
     <footer>
         <address>
-            最終更新日：2020年04月26日
+            最終更新日：2020年04月29日
         </address>
     </footer>
     
