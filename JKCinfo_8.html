@@ -1,189 +1,195 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>
-        情報基盤センターの初期設定の説明5-2_L2TP VPN設定
-    </title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+  <meta charset="UTF-8">
+  <title>
+    情報基盤センターの初期設定の説明5-2_L2TP VPN設定
+  </title>
+  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
-<body><div class="main">
+<body>
+  <div class="main">
     <header>
-        <h1>
-            Lunatic電通生もっちゃんの部屋
-        </h1>
+      <h1>
+        Lunatic電通生もっちゃんの部屋
+      </h1>
     </header>
 
     <aside>
-        <p>
-            <a href="https://sakuramochi708.github.io/Ran-syama/">Top</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_1">STEP 0 & はじめに</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_2">STEP 1</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_2_9">STEP 2</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_3">STEP 2_SSH-PowerShell</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_4">STEP 2_SSH-PuTTY</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_5">STEP 3</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_6">STEP 4</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_7">STEP 5</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_8">STEP 5_L2TP</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_9">STEP 5_SSL</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_10">STEP 6</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_11">STEP 7 & おわりに</a>
-        </p>
-        <p>
-            <a href="https://sakuramochi708.github.io/Ran-syama/nichijyou">日常・大学生活</a>
-        </p>
-        <p>
-            <a href="https://sakuramochi708.github.io/Ran-syama/koken">こーけん</a>
-        </p>
-        <p>
-            <a href="https://sakuramochi708.github.io/Ran-syama/mani">まにけん</a>
-        </p>
-        <p>
-            <a href="https://sakuramochi708.github.io/Ran-syama/touhou-club">電々。通信</a>
-        </p>
-        <p>
-            <a href="https://sakuramochi708.github.io/Ran-syama/sns">SNS</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/link">有用UEC生のlink集</a>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/">Top</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_1">STEP 0 & はじめに</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_2">STEP 1</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_2_9">STEP 2</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_3">STEP 2_SSH-PowerShell</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_4">STEP 2_SSH-PuTTY</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_5">STEP 3</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_6">STEP 4</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_7">STEP 5</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_8">STEP 5_L2TP</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_9">STEP 5_SSL</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_10">STEP 6</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_11">STEP 7 & おわりに</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/nichijyou">日常・大学生活</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/koken">こーけん</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/mani">まにけん</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/touhou-club">電々。通信</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/sns">SNS</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/link">有用UEC生のlink集</a>
       </p>
     </aside>
 
     <section>
-        <h2>
-          STEP 5-1  L2TP VPN の設定・使用方法
-        </h2>
-        <!-- <h2>
+      <h2>
+        STEP 5-1 L2TP VPN の設定・使用方法
+      </h2>
+      <!-- <h2>
           4/29 15:00現在システムトラブル中です。つながりにくいです。
         </h2> -->
-        <h5>
-          Windows10の人向けです。
-        </h5>
-        <img src="step5_2.png" alt="" height=auto width=70%/>
-        <p>
-          「スタートボタン　⇒　設定　⇒　ネットワークとインターネット　⇒　VPN　⇒　VPN接続を追加する」を選んでください。
-        </p>
-        <img src="step5_3.png" alt="" height=auto width=80%/>
-        <img src="step5_4.png" alt="" height=auto width=80%/>
-        <p>
-          画像を確認しながら、以下の情報を入力しましょう。事前共有鍵の説明は、箇条書きの下に書かれています。
-          <ul>
-            <li>「VPNプロバイダー」は、右の「V」をクリックして「Windows (ビルドイン）」を選択します。</li>
-            <li>「接続名」は、自分がわかる名前を入力してください。</li>
-            <li>「サーバー名またはアドレス」は、<code>vpn.cc.uec.ac.jp</code>と入力してください。</li>
-            <li>「VPNの種類」は、右の「V」をクリックして「事前共有キーを使った L2TP/IPsec」を選んでください。</li>
-            <li>「事前共有キー」は、下で得られたものを入力してください（他人に見せるの厳禁）</li>
-            <li>「サインイン情報の種類」は「ユーザー名とパスワード」を選択してください。</li>
-            <li>「ユーザー名（オプション）」は、自分のUECアカウント（x20xxxxx）を、「パスワード（オプション）」は自分のパスワードを入力してください。</li>
-            <li>「サインイン情報を保存する」はチェックを入れてください。</li>
-          </ul>
-          そして、保存です。
-        </p>
-        <br>
-        <p>
-          事前共有鍵の入手方法は、Firefoxを用いて <a href="https://www.cc.uec.ac.jp/in/vpn_key/" target="_blank">https://www.cc.uec.ac.jp/in/vpn_key/</a>にアクセスします。　ユーザー名とパスワードを求められるのでUECアカウントとパスワードを入れてください。
-        </p>
-        <h2>使用許諾(product license agreement)が出てくるので絶対に守りましょう。</h2>
-        <p>
-          「同意する」を選択すると、いくつか種類があります。更新日現在は「2019年度 事前共有鍵」を使用してください。そこに書かれている文字列が「事前共有鍵」です。（なお、2020年版はそのうち公開されますので、発行され次第そちらに変更してください。）
-        </p>
-        <br>
-        <p>
-          これで設定はおしまいです。Powershellを開いていた人は閉じてください。また、Firefoxの設定を戻します。「右上の三　⇒　オプション　⇒　一般」を選択し、一番下にある「接続設定」をクリック、「システムのプロキシー設定を使用する」を選んでください。
-        </p>
-        <br>
-        <br>
-        <p>
-          次に確認方法です。
-        </p>
-        <img src="step5_5.png" alt="" height=auto width=70%/>
-        <p>
-          「スタートボタン　⇒　設定　⇒　ネットワークとインターネット　⇒　VPN」と進んで、自分が先ほど決めた「VPNの接続名（例ではUEConnect)」をクリック。「接続」ボタンを押してください。「接続済み」となれば成功です。 <a href="https://www.cc.uec.ac.jp/in/" target="_blank">https://www.cc.uec.ac.jp/in/</a>にアクセスし、「このページは学内ネットワークからしかアクセスできません． 」と出れば成功です。
-        </p>
-        <p>
-          ただし、このままでは他のサイトを見ることができないので、一旦「切断」ボタンをおして切断してください。そののち「詳細オプション」を選択してください。
-        </p>
-        <img src="step5_6.png" alt="" height=auto width=70%/>
-        <p>
-          「VPNプロキシ設定」の欄を、画像を見ながら入力してください。
-          <ul>
-            <li>「手動セットアップ」を選んでください。</li>
-            <li>「アドレス」は、<code>proxy.uec.ac.jp</code>を入力してください。</li>
-            <li>「ポート」は<code>8080</code>です。</li>
-            <li>下のチェックは入れておいたほうが無難です。（任意）</li>
-          </ul>
-          そして「適用」をおして、左上の「←」をおしてください。
-        </p>
-        <p>
-          もう一度「接続」すると、好きなサイトを閲覧することができます。
-        </p>
-        <br>
-        <br>
-        <p>
-          最後に、使用方法と注意点です。
-        </p>
-        <p>
-          「学外」からアクセスする場合、この方法で「接続」「切断」をしてください。
-        </p>
-        <p>
-          ただし、大学内で「UECWireless」や「AIA-Wireless」に接続する時は、別途プロキシ設定が必要です。
-        </p>
-        <img src="step5_12.png" alt="" height=auto width=70%/>
-        <p>
-          「スタートボタン　⇒　設定　⇒　ネットワークとインターネット　⇒　プロキシ　」を選択。「手動プロキシセットアップ」を選択し、以下のように入力しましょう。
-          <ul>
-            <li>「プロキシサーバーを使う」を「ON」にする。</li>
-            <li>「アドレス」欄に、<code>proxy.uec.ac.jp</code>と入力する。</li>
-            <li>「ポート」は<code>8080</code>と入力してください。</li>
-            <li>チェックはつけて置いた方が無難です。</li>
-            <li>「保存」を押す。</li>
-          </ul>
-          この「プロキシサーバーを使う」をON・OFFすることで見れるようになります。
-        </p>
+      <h5>
+        Windows10の人向けです。
+      </h5>
+      <img src="./src/step5_2.png" alt="" height=auto width=70% />
+      <p>
+        「スタートボタン　⇒　設定　⇒　ネットワークとインターネット　⇒　VPN　⇒　VPN接続を追加する」を選んでください。
+      </p>
+      <img src="./src/step5_3.png" alt="" height=auto width=80% />
+      <img src="./src/step5_4.png" alt="" height=auto width=80% />
+      <p>
+        画像を確認しながら、以下の情報を入力しましょう。事前共有鍵の説明は、箇条書きの下に書かれています。
+      <ul>
+        <li>「VPNプロバイダー」は、右の「V」をクリックして「Windows (ビルドイン）」を選択します。</li>
+        <li>「接続名」は、自分がわかる名前を入力してください。</li>
+        <li>「サーバー名またはアドレス」は、<code>vpn.cc.uec.ac.jp</code>と入力してください。</li>
+        <li>「VPNの種類」は、右の「V」をクリックして「事前共有キーを使った L2TP/IPsec」を選んでください。</li>
+        <li>「事前共有キー」は、下で得られたものを入力してください（他人に見せるの厳禁）</li>
+        <li>「サインイン情報の種類」は「ユーザー名とパスワード」を選択してください。</li>
+        <li>「ユーザー名（オプション）」は、自分のUECアカウント（x20xxxxx）を、「パスワード（オプション）」は自分のパスワードを入力してください。</li>
+        <li>「サインイン情報を保存する」はチェックを入れてください。</li>
+      </ul>
+      そして、保存です。
+      </p>
+      <br>
+      <p>
+        事前共有鍵の入手方法は、Firefoxを用いて <a href="https://www.cc.uec.ac.jp/in/vpn_key/"
+          target="_blank">https://www.cc.uec.ac.jp/in/vpn_key/</a>にアクセスします。　ユーザー名とパスワードを求められるのでUECアカウントとパスワードを入れてください。
+      </p>
+      <h2>使用許諾(product license agreement)が出てくるので絶対に守りましょう。</h2>
+      <p>
+        「同意する」を選択すると、いくつか種類があります。更新日現在は「2019年度
+        事前共有鍵」を使用してください。そこに書かれている文字列が「事前共有鍵」です。（なお、2020年版はそのうち公開されますので、発行され次第そちらに変更してください。）
+      </p>
+      <br>
+      <p>
+        これで設定はおしまいです。Powershellを開いていた人は閉じてください。また、Firefoxの設定を戻します。「右上の三　⇒　オプション　⇒　一般」を選択し、一番下にある「接続設定」をクリック、「システムのプロキシー設定を使用する」を選んでください。
+      </p>
+      <br>
+      <br>
+      <p>
+        次に確認方法です。
+      </p>
+      <img src="./src/step5_5.png" alt="" height=auto width=70% />
+      <p>
+        「スタートボタン　⇒　設定　⇒　ネットワークとインターネット　⇒　VPN」と進んで、自分が先ほど決めた「VPNの接続名（例ではUEConnect)」をクリック。「接続」ボタンを押してください。「接続済み」となれば成功です。
+        <a href="https://www.cc.uec.ac.jp/in/"
+          target="_blank">https://www.cc.uec.ac.jp/in/</a>にアクセスし、「このページは学内ネットワークからしかアクセスできません． 」と出れば成功です。
+      </p>
+      <p>
+        ただし、このままでは他のサイトを見ることができないので、一旦「切断」ボタンをおして切断してください。そののち「詳細オプション」を選択してください。
+      </p>
+      <img src="./src/step5_6.png" alt="" height=auto width=70% />
+      <p>
+        「VPNプロキシ設定」の欄を、画像を見ながら入力してください。
+      <ul>
+        <li>「手動セットアップ」を選んでください。</li>
+        <li>「アドレス」は、<code>proxy.uec.ac.jp</code>を入力してください。</li>
+        <li>「ポート」は<code>8080</code>です。</li>
+        <li>下のチェックは入れておいたほうが無難です。（任意）</li>
+      </ul>
+      そして「適用」をおして、左上の「←」をおしてください。
+      </p>
+      <p>
+        もう一度「接続」すると、好きなサイトを閲覧することができます。
+      </p>
+      <br>
+      <br>
+      <p>
+        最後に、使用方法と注意点です。
+      </p>
+      <p>
+        「学外」からアクセスする場合、この方法で「接続」「切断」をしてください。
+      </p>
+      <p>
+        ただし、大学内で「UECWireless」や「AIA-Wireless」に接続する時は、別途プロキシ設定が必要です。
+      </p>
+      <img src="./src/step5_12.png" alt="" height=auto width=70% />
+      <p>
+        「スタートボタン　⇒　設定　⇒　ネットワークとインターネット　⇒　プロキシ　」を選択。「手動プロキシセットアップ」を選択し、以下のように入力しましょう。
+      <ul>
+        <li>「プロキシサーバーを使う」を「ON」にする。</li>
+        <li>「アドレス」欄に、<code>proxy.uec.ac.jp</code>と入力する。</li>
+        <li>「ポート」は<code>8080</code>と入力してください。</li>
+        <li>チェックはつけて置いた方が無難です。</li>
+        <li>「保存」を押す。</li>
+      </ul>
+      この「プロキシサーバーを使う」をON・OFFすることで見れるようになります。
+      </p>
 
 
 
-        <br>
-        <br>
-        <p>
-          Next ->  <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_10">STEP 6   メールを設定する</a>　　
-        </p>
-        <p>※VPNやSSHは必要ありません。</p>
+      <br>
+      <br>
+      <p>
+        Next -> <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_10">STEP 6 メールを設定する</a>　　
+      </p>
+      <p>※VPNやSSHは必要ありません。</p>
 
     </section>
 
     <footer>
-        <address>
-            最終更新日：2020年04月29日
-        </address>
+      <address>
+        最終更新日：2020年04月29日
+      </address>
     </footer>
-    
-</div></body>
+
+  </div>
+</body>
 
 </html>

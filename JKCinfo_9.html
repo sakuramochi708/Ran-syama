@@ -1,163 +1,166 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>
-        情報基盤センターの初期設定の説明5-3_SSL VPN設定
-    </title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+  <meta charset="UTF-8">
+  <title>
+    情報基盤センターの初期設定の説明5-3_SSL VPN設定
+  </title>
+  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
-<body><div class="main">
+<body>
+  <div class="main">
     <header>
-        <h1>
-            Lunatic電通生もっちゃんの部屋
-        </h1>
+      <h1>
+        Lunatic電通生もっちゃんの部屋
+      </h1>
     </header>
 
     <aside>
-        <p>
-            <a href="https://sakuramochi708.github.io/Ran-syama/">Top</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_1">STEP 0 & はじめに</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_2">STEP 1</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_2_9">STEP 2</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_3">STEP 2_SSH-PowerShell</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_4">STEP 2_SSH-PuTTY</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_5">STEP 3</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_6">STEP 4</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_7">STEP 5</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_8">STEP 5_L2TP</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_9">STEP 5_SSL</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_10">STEP 6</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_11">STEP 7 & おわりに</a>
-        </p>
-        <p>
-            <a href="https://sakuramochi708.github.io/Ran-syama/nichijyou">日常・大学生活</a>
-        </p>
-        <p>
-            <a href="https://sakuramochi708.github.io/Ran-syama/koken">こーけん</a>
-        </p>
-        <p>
-            <a href="https://sakuramochi708.github.io/Ran-syama/mani">まにけん</a>
-        </p>
-        <p>
-            <a href="https://sakuramochi708.github.io/Ran-syama/touhou-club">電々。通信</a>
-        </p>
-        <p>
-            <a href="https://sakuramochi708.github.io/Ran-syama/sns">SNS</a>
-        </p>
-        <p>
-          <a href="https://sakuramochi708.github.io/Ran-syama/link">有用UEC生のlink集</a>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/">Top</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_1">STEP 0 & はじめに</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_2">STEP 1</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_2_9">STEP 2</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_3">STEP 2_SSH-PowerShell</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_4">STEP 2_SSH-PuTTY</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_5">STEP 3</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_6">STEP 4</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_7">STEP 5</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_8">STEP 5_L2TP</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_9">STEP 5_SSL</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_10">STEP 6</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_11">STEP 7 & おわりに</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/nichijyou">日常・大学生活</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/koken">こーけん</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/mani">まにけん</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/touhou-club">電々。通信</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/sns">SNS</a>
+      </p>
+      <p>
+        <a href="https://sakuramochi708.github.io/Ran-syama/link">有用UEC生のlink集</a>
       </p>
     </aside>
 
     <section>
-        <h2>
-          STEP 5-2  SSL VPN の設定・使用方法
-        </h2>
-        <p>
-          まず、学外から設定している人は、まだPowershellが動いている事を確認してください。
-        </p>
-        <p>
-          Firefoxで<a href="https://sophos.cc.uec.ac.jp/userportal/webpages/myaccount/login.jsp" target="_blank">https://sophos.cc.uec.ac.jp/userportal/webpages/myaccount/login.jsp</a>にアクセスしてください。
-        </p>
-        <img src="step5_7.png" alt="" height=auto width=70%/>
-        <p>
-          画面のページが開いたら、「ユーザー名」にUECアカウント、「パスワード」にパスワードを入力してください。（これ以降の内容は個人に紐付けられているので、公開しないでください）
-        </p>
-        <img src="step5_8.png" alt="" height=auto width=70%/>引用：情報基盤センターHP
-        <p>
-          左の「SSL VPN」をクリック、右の「Windows 向けクライアントと設定のダウンロード」をクリックして、ファイルを保存してください。そして、実行してください。（セキュリティ画面が出てきたら、「はい」を押してください）
-        </p>
-        <p>
-          実行したら、すべて英語ですが恐れずに。特にこだわりが無ければ、「Next」か「I agree」、「Install」を押してください。「Finish」がでたら終了です。
-        </p>
-        <br>
-        <p>
-          これで設定はおしまいです。Powershellを開いていた人は閉じてください。また、Firefoxの設定を戻します。「右上の三　⇒　オプション　⇒　一般」を選択し、一番下にある「接続設定」をクリック、「システムのプロキシー設定を使用する」を選んでください。
-        </p>
-        <br>
-        <br>
-        <p>
-          次に確認方法です。
-        </p>
-        <img src="step5_9.png" alt="" height=auto width=70%/>
-        <p>
-          デスクトップの右下に信号機があると思います。それを、「右クリック」して「接続」を押します。
-        </p>
-        <img src="step5_10.png" alt="" height=auto width=70%/>
-        <p>
-          信号機が黄色信号になって、「ユーザー認証画面」が出てきます。ユーザー名は「UECアカウント」、パスワードは「パスワード」を押して、「OK」を選択してください。
-        </p>
-        <img src="step5_11.png" alt="" height=auto width=70%/>
-        <p>
-          信号が青になれば成功です。しかし、このままだといろいろなサイトが見れません。従って、別途プロキシ設定を行っていきます。
-        </p>
-        <img src="step5_12.png" alt="" height=auto width=70%/>
-        <p>
-          「スタートボタン　⇒　設定　⇒　ネットワークとインターネット　⇒　プロキシ　」を選択。「手動プロキシセットアップ」を選択し、以下のように入力しましょう。
-          <ul>
-            <li>「プロキシサーバーを使う」を「ON」にする。</li>
-            <li>「アドレス」欄に、<code>proxy.uec.ac.jp</code>と入力する。</li>
-            <li>「ポート」は<code>8080</code>と入力してください。</li>
-            <li>チェックはつけて置いた方が無難です。</li>
-            <li>「保存」を押す。</li>
-          </ul>
-          これで、見れるようになったはずです。
-        </p>
-        <br>
-        <br>
-        <p>
-          最後に、使用方法と注意点です。
-        </p>
-          学外からアクセスするときは、「信号の接続・切断」と「プロキシ設定のON・OFF」をしましょう。
-        <p>
-        </p>
-        <p>
-          ただし、大学内で「UECWireless」や「AIA-Wireless」に接続する時は、「プロキシ設定のON・OFF」だけで見られるようになります。
-        </p>
+      <h2>
+        STEP 5-2 SSL VPN の設定・使用方法
+      </h2>
+      <p>
+        まず、学外から設定している人は、まだPowershellが動いている事を確認してください。
+      </p>
+      <p>
+        Firefoxで<a href="https://sophos.cc.uec.ac.jp/userportal/webpages/myaccount/login.jsp"
+          target="_blank">https://sophos.cc.uec.ac.jp/userportal/webpages/myaccount/login.jsp</a>にアクセスしてください。
+      </p>
+      <img src="./src/step5_7.png" alt="" height=auto width=70% />
+      <p>
+        画面のページが開いたら、「ユーザー名」にUECアカウント、「パスワード」にパスワードを入力してください。（これ以降の内容は個人に紐付けられているので、公開しないでください）
+      </p>
+      <img src="./src/step5_8.png" alt="" height=auto width=70% />引用：情報基盤センターHP
+      <p>
+        左の「SSL VPN」をクリック、右の「Windows 向けクライアントと設定のダウンロード」をクリックして、ファイルを保存してください。そして、実行してください。（セキュリティ画面が出てきたら、「はい」を押してください）
+      </p>
+      <p>
+        実行したら、すべて英語ですが恐れずに。特にこだわりが無ければ、「Next」か「I agree」、「Install」を押してください。「Finish」がでたら終了です。
+      </p>
+      <br>
+      <p>
+        これで設定はおしまいです。Powershellを開いていた人は閉じてください。また、Firefoxの設定を戻します。「右上の三　⇒　オプション　⇒　一般」を選択し、一番下にある「接続設定」をクリック、「システムのプロキシー設定を使用する」を選んでください。
+      </p>
+      <br>
+      <br>
+      <p>
+        次に確認方法です。
+      </p>
+      <img src="./src/step5_9.png" alt="" height=auto width=70% />
+      <p>
+        デスクトップの右下に信号機があると思います。それを、「右クリック」して「接続」を押します。
+      </p>
+      <img src="./src/step5_10.png" alt="" height=auto width=70% />
+      <p>
+        信号機が黄色信号になって、「ユーザー認証画面」が出てきます。ユーザー名は「UECアカウント」、パスワードは「パスワード」を押して、「OK」を選択してください。
+      </p>
+      <img src="./src/step5_11.png" alt="" height=auto width=70% />
+      <p>
+        信号が青になれば成功です。しかし、このままだといろいろなサイトが見れません。従って、別途プロキシ設定を行っていきます。
+      </p>
+      <img src="./src/step5_12.png" alt="" height=auto width=70% />
+      <p>
+        「スタートボタン　⇒　設定　⇒　ネットワークとインターネット　⇒　プロキシ　」を選択。「手動プロキシセットアップ」を選択し、以下のように入力しましょう。
+      <ul>
+        <li>「プロキシサーバーを使う」を「ON」にする。</li>
+        <li>「アドレス」欄に、<code>proxy.uec.ac.jp</code>と入力する。</li>
+        <li>「ポート」は<code>8080</code>と入力してください。</li>
+        <li>チェックはつけて置いた方が無難です。</li>
+        <li>「保存」を押す。</li>
+      </ul>
+      これで、見れるようになったはずです。
+      </p>
+      <br>
+      <br>
+      <p>
+        最後に、使用方法と注意点です。
+      </p>
+      学外からアクセスするときは、「信号の接続・切断」と「プロキシ設定のON・OFF」をしましょう。
+      <p>
+      </p>
+      <p>
+        ただし、大学内で「UECWireless」や「AIA-Wireless」に接続する時は、「プロキシ設定のON・OFF」だけで見られるようになります。
+      </p>
 
 
 
-        <br>
-        <br>
-        <p>
-          Next ->  <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_10">STEP 6   メールを設定する</a>
-        </p>
-        <p>※VPNやSSHは必要ありません。</p>
+      <br>
+      <br>
+      <p>
+        Next -> <a href="https://sakuramochi708.github.io/Ran-syama/JKCinfo_10">STEP 6 メールを設定する</a>
+      </p>
+      <p>※VPNやSSHは必要ありません。</p>
 
     </section>
 
     <footer>
-        <address>
-            最終更新日：2020年04月29日
-        </address>
+      <address>
+        最終更新日：2020年04月29日
+      </address>
     </footer>
-    
-</div></body>
+
+  </div>
+</body>
 
 </html>
