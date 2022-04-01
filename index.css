@@ -33,3 +33,14 @@ footer{
 address{
     text-align: right
 }
+
+/* asign */
+#side-box{
+    font-size: 15px;
+    text-align: left;
+}
+
+/* body */
+#body-div{
+    font-size: 20px;
+}
