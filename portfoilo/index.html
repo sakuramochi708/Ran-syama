@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/article#">
+    <meta charset="UTF-8">
+    <!-- OGP setting -->
+    <meta property="og:url" content="https://mocchan.dev/portfoilo/">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="制作作品集Portfoilo - もっちゃん">
+    <meta property="og:description" content="もっちゃんが作成した作品集です。">
+    <meta property="og:site_name" content="もちもちのめも">
+    <meta property="og:image"
+        content=" https://sakuramochi708.github.io/Ran-syama/daily-life/uec-advent-calendar-2022/src/Twitter_icon_sakuramochi708.jpg">
+
+    <!-- Bootstrap CSSの読み込み -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- bootstrap series -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Lightbox for Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+    <!-- original css -->
+    <link href="css/navbar-top-fixed.css" rel="stylesheet">
+
+    <title>
+        制作作品集Portfoilo - もっちゃん
+    </title>
+</head>
+
+<body>
+    <!-- ナビゲーションメニュー -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <a class="navbar-brand text-dark" href="#">もちもちのめも</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ">
+                <a class="nav-link text-dark" href="https://sakuramochi708.github.io/Ran-syama/">
+                    Topへ戻る
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main role="main">
+        <div class="container py-2" id="title">
+            <h1>
+                制作作品集Portfoilo
+            </h1>
+        </div>
+
+        <div class="container py-3" id="index">
+            <div class="card">
+                <div class="card-body">
+                    目次<br>
+                    <a href="IVRC_heart">【Hardware】心臓を掴まれる ～掌～【IVRC2022 Seed Stage 出展作品】</a><br>
+                    <a href="meiro">【Java / Software】迷路ゲーム【授業発表最優秀賞】</a><br>
+                    <a href="buho63">【Arduino / Hardware】8×8 2色LEDマトリックス</a><br>
+                    <a href="buho64">【C lang / Software】C言語でオセロ作製</a><br>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container py-3" id="IVRC_heart">
+            <br>
+            <h3>
+                【Hardware】心臓を掴まれる ～掌～【IVRC2022 Seed Stage 出展作品】
+            </h3>
+            <p>
+                学部４年次に研究室のメンバーでチームを組んで作製した作品です。現実には掴まれる経験ができない「心臓を握られる」体験ができることをコンセプトにしたバーチャルインタラクション作品です。日本バーチャルリアリティ学会主催のインタラクティブ作品を企画・制作する「IVRC2022」において、Seed
+                Stage に出展しました。
+            </p>
+            <p>
+                心臓の鼓動はサーボモータ2個を用いてピストンを動かすことで表現しました。心臓を握られる感覚提示は、手袋に設置した圧力センサの値を読み取り、ArduinoとPythonを用いて指定した動きになるようにサーボモータを制御しました。私は、ハードウェアの設計部分を担当しました。
+            </p>
+            <p>
+                <a href="https://www.youtube.com/watch?v=qHiSptg6Ln0">作品紹介動画</a>
+            </p>
+            <p>
+                <a
+                    href="http://ivrc.net/archive/%e5%bf%83%e8%87%93%e3%82%92%e6%8e%b4%e3%81%be%e3%82%8c%e3%82%8b-%e6%8e%8c-2022/">作品紹介ページ</a>
+            </p>
+            <div class="container">
+                クリックすると拡大できます。画像は作品紹介動画より引用しました。
+                <div class="row">
+                    <div class="col">
+                        <a href="./src/ivrc_heart/ivrc-heart-1.png" data-toggle="lightbox" data-title="装置全体図">
+                            <img src="./src/ivrc_heart/ivrc-heart-1.png" class="img-fluid" alt="ivrc-heart-1">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="./src/ivrc_heart/ivrc-heart-2.png" data-toggle="lightbox" data-title="装置内部">
+                            <img src="./src/ivrc_heart/ivrc-heart-2.png" class="img-fluid" alt="ivrc-heart-2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container py-3" id="meiro">
+            <br>
+            <h3>
+                【Java / Software】迷路ゲーム【授業発表最優秀賞】
+            </h3>
+            <p>
+                学部２年次に友人と３人でチームを組んで作製した作品です。迷路状になったダンジョンを攻略していくゲームですが、落ちているアイテムを使用すると壁を壊したり、敵を倒したりできます。また、獲得したコインを使用してガチャを引くことができ、攻略の助けとなるアイテムを始めから獲得することができます。授業課題で作製しましたが、授業内で最優秀賞を獲得することができました。
+            </p>
+            <p>
+                プログラム言語はJavaで作製されています。迷路は穴掘り法を用いて、必ず１ルートになるような迷路を生成しています。私は、プレイヤーデータの管理部分やゲームのメインフローの作成、コードのレビュー担当をしました。
+            </p>
+            <div class="container">
+                クリックすると拡大できます。
+                <div class="row">
+                    <div class="col">
+                        <a href="./src/meiro/meiro-p1.png" data-toggle="lightbox" data-title="ゲーム設計">
+                            <img src="./src/meiro/meiro-p1.png" class="img-fluid" alt="meiro-p1">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="./src/meiro/meiro-p2.png" data-toggle="lightbox" data-title="ゲーム画像">
+                            <img src="./src/meiro/meiro-p2.png" class="img-fluid" alt="meiro-p2">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="./src/meiro/meiro-p3.png" data-toggle="lightbox" data-title="アイテム紹介">
+                            <img src="./src/meiro/meiro-p3.png" class="img-fluid" alt="meiro-p3">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="./src/meiro/meiro-p4.png" data-toggle="lightbox" data-title="担当箇所">
+                            <img src="./src/meiro/meiro-p4.png" class="img-fluid" alt="meiro-p4">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container py-3" id="buho63">
+            <br>
+            <h3>
+                【Arduino / Hardware】8×8 2色LEDマトリックス
+            </h3>
+            <p>
+                学部１年次にものづくり系サークルで作成した、8×8 2色LEDマトリックスをArduinoで制御した作品です。電光掲示板のように文字をスクロールさせることができます。
+            </p>
+            <p>
+                オセロを電子部品のみで作製しようとした意図があります。オセロについてはコロナ禍による大学閉鎖により完成していません。
+            </p>
+
+            <div class="container">
+                クリックすると拡大できます。
+                <div class="row">
+                    <div class="col">
+                        <a href="./src/buho63/mocchan-buho63-1.png" data-toggle="lightbox" data-title="工学研究部部報63号-p1">
+                            <img src="./src/buho63/mocchan-buho63-1.png" class="img-fluid" alt="buho63-1">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="./src/buho63/mocchan-buho63-3.png" data-toggle="lightbox" data-title="工学研究部部報63号-p2">
+                            <img src="./src/buho63/mocchan-buho63-3.png" class="img-fluid" alt="buho63-2">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="./src/buho63/mocchan-buho63-2.png" data-toggle="lightbox" data-title="工学研究部部報63号-p3">
+                            <img src="./src/buho63/mocchan-buho63-2.png" class="img-fluid" alt="buho63-3">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container py-3" id="buho64">
+            <br>
+            <h3>
+                【C lang / Software】C言語でオセロ作製
+            </h3>
+            <p>
+                学部１年次にものづくり系サークルで作成した、C言語でオセロを作製した作品です。CUI上にはなりますが、ひととおりのルール、置ける箇所等の判定は行います。
+            </p>
+            <p>
+                オセロを電子部品のみで作製しようとした意図があり、Arduinoに書き込みできるようC言語で作製しました。オセロについてはコロナ禍による大学閉鎖により完成していません。
+            </p>
+
+            <div class="container">
+                クリックすると拡大できます。
+                <div class="row">
+                    <div class="col">
+                        <a href="./src/buho64/buho64-1.png" data-toggle="lightbox" data-title="工学研究部部報64号-p1">
+                            <img src="./src/buho64/buho64-1.png" class="img-fluid" alt="buho64-1">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="./src/buho64/buho64-2.png" data-toggle="lightbox" data-title="工学研究部部報64号-p2">
+                            <img src="./src/buho64/buho64-2.png" class="img-fluid" alt="buho64-2">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="./src/buho64/buho64-3.png" data-toggle="lightbox" data-title="工学研究部部報64号-p3">
+                            <img src="./src/buho64/buho64-3.png" class="img-fluid" alt="buho64-3">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="./src/buho64/buho64-4.png" data-toggle="lightbox" data-title="工学研究部部報64号-p4">
+                            <img src="./src/buho64/buho64-4.png" class="img-fluid" alt="buho64-4">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="./src/buho64/buho64-5.png" data-toggle="lightbox" data-title="工学研究部部報64号-p5">
+                            <img src="./src/buho64/buho64-5.png" class="img-fluid" alt="buho64-5">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="./src/buho64/buho64-6.png" data-toggle="lightbox" data-title="工学研究部部報64号-p6">
+                            <img src="./src/buho64/buho64-6.png" class="img-fluid" alt="buho64-6">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, Popper.js, Bootstrap JSの順番に読み込む -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- Lightbox for Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+    <!-- ボディ最下部にモーダル用javascriptを設置 -->
+    <script type="text/javascript">
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+</body>
+
+</html>
