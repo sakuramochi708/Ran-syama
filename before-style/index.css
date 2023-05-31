@@ -1,0 +1,53 @@
+p {
+    font-size: 15px;
+}
+
+.main {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: "a a""b c""d d";
+    grid-template-columns: 8em 1fr;
+    grid-template-rows: 6em 1fr 1em
+}
+
+/*位置決め*/
+body {
+    background-image: url(https://sakuramochi708.github.io/Ran-syama/before-style/haikei.jpg);
+    margin: 0px
+}
+
+header {
+    grid-area: a;
+    padding: 1em
+}
+
+aside {
+    grid-area: b;
+    padding: 1em
+}
+
+section {
+    grid-area: c;
+    padding: 1em
+}
+
+footer {
+    grid-area: d;
+    padding: 1em
+}
+
+address {
+    text-align: right;
+}
+
+/* asign */
+#side-box {
+    font-size: 15px;
+    text-align: left;
+}
+
+/* body */
+#body-div {
+    font-size: 20px;
+}
